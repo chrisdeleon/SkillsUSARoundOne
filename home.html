@@ -6,87 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <title>Chamonix House - Vintage and Antique Online Furniture Store</title>
 </head>
 <body>
     <!-- NAV BAR -->
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="shop.html">About</a></li>
-        </ul>
-    </nav>
-    <!-- NAV BAR END-->
+    
 
     <!-- FIRST VIEWPORT -->
-    <div>
-        <h1>CHAMONIX HOUSE</h1>
-        <h3>Make It Now!</h3>
-        <hr>
-        <h1>Vintage + <br>Antique Online<br>Furniture Store</h1>
+    <div class="homeViewportOne">
+
+        <nav class="navbar">
+            <ul class="navbarContainer">
+                <li class="navbarItem"><a href="home.html" class="navbarLink">Home</a></li>
+                <li class="navbarItem"><a href="shop.html" class="navbarLink">Shop</a></li>
+                <li class="navbarItem"><a href="about.html" class="navbarLink">About</a></li>
+            </ul>
+        </nav>
+        <!-- NAV BAR END-->
+        <div class="titleContainer">
+            <h1 class="title">CHAMONIX HOUSE</h1>
+            <h3 class="subtitle">Make It Now!</h3>
+            <hr>
+            <h1 class="title">Vintage + <br>Antique Online<br>Furniture Store</h1>
+        </div>
+        
     </div>
 
     <!-- SECOND VIEWPORT -->
     
-    <div> 
-        <h1>OUR PRODUCTS</h1>
-        
-        <div>
-            <a href=""><img src="" alt="Candles"></a>
-            <h4>Candles</h4>
-        </div>
-
-        <div>
-            <a href=""><img src="" alt="Rugs"></a>
-            <h4>Rugs</h4>
-        </div>
-
-        <div>
-            <a href=""><img src="" alt="Lights"></a>
-            <h4>Lights</h4>
-        </div>
-
-        <div>
-            <a href=""><img src="" alt="Art"></a>
-            <h4>Art</h4>
-        </div>
-
-        <div>
-            <a href=""><img src="" alt="Bedding"></a>
-            <h4>Bedding</h4>
-        </div>
-
-        <div>
-            <a href=""><img src="" alt="Kitchen"></a>
-            <h4>Kitchen</h4>
+    <div class="homeViewportTwo"> 
+        <h1 class="homeViewportTwoTitle">OUR PRODUCTS</h1>
+        <div class="homeCardContainer">
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/CandleCard.jpg" alt="Candles" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Candles</h4>
+            </div>
+    
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/RugCard.jpg" alt="Rugs" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Rugs</h4>
+            </div>
+    
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/LightsCard.jpg" alt="Lights" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Lights</h4>
+            </div>
+    
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/ArtCard.jpg" alt="Art" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Art</h4>
+            </div>
+    
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/BedCard.jpg" alt="Bedding" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Bedding</h4>
+            </div>
+    
+            <div class="homeCard">
+                <a href="shop.html" class="imageLink"><img src="images/KitchenCard.jpg" alt="Kitchen" class="homeImageCard"></a>
+                <h4 class="homeCardLabel">Kitchen</h4>
+            </div>
         </div>
     </div>
     <!-- END OF SECOND VIEWPORT-->
 
     <!-- THIRD VIEWPORT -->
 
-    <div>
-        <h1>OUR STORY</h1>
-        <div>
-            <p>Chamonix opened as a small antiques store 
-                in rural Scituate, Rhode Island where Nick and Jess currently 
-                reside with their daughter Alice.<br> The store was voted “Best Eclectic Antiques” 
-                in 2017 by Rhode Island Monthly Magazine.<br>After three years of 
-                operating a physical locaiton and selling at the Brimfield 
-                Antiques Market, Chamonix closed its physical location and 
-                shifted to an online only retail platform. </p>
+    <div class="homeViewportThree">
+        <h1 class="homeViewportThreeTitle">OUR<br> STORY</h1>
+        <div class="thirdViewportContainer">
+            <div class="thirdViewCards">
+                <p>Chamonix opened as a small antiques store 
+                    in rural Scituate, Rhode Island where Nick and Jess currently 
+                    reside with their daughter Alice.<br><br> The store was voted “Best Eclectic Antiques” 
+                    in 2017 by Rhode Island Monthly Magazine.<br><br>After three years of 
+                    operating a physical location and selling at the Brimfield 
+                    Antiques Market, Chamonix closed its physical location and 
+                    shifted to an online only retail platform. </p>
+            </div>
+            <div class="thirdViewCards">
+                <img src="images/AboutImage.jpeg" class="small" alt="Owners of Chamonix">
+            </div>
         </div>
-        <div>
-            <img src="" alt="Owners of Chamonix">
-        </div>
-        <a href="about.html"><p>Learn More</p></a>
+        <a href="about.html" class="learnMoreButton"><p>Learn More</p></a>
     </div>
 
+    <!-- FOOTER SECTION -->
     <footer>
         <div>
-            <ul>
-                <li><a href=""><strong>RESOURCES</strong></a></li>
+            <ul class="footerListingContainer">
+                <strong>RESOURCES</strong>
                 <li><a href="">LOCATE A GALLERY</a></li>
                 <li><a href="">COLLECTOR PIECES</a></li>
                 <li><a href="">CERTIFIED VINTAGE</a></li>
@@ -94,8 +104,8 @@
             </ul>
         </div>
         <div>
-            <ul>
-                <li><a href=""><strong>CUSTOMER EXPERIENCE</strong></a></li>
+            <ul class="footerListingContainer">
+                <strong>CUSTOMER EXPERIENCE</strong>
                 <li><a href="">CONTACT US</a></li>
                 <li><a href="">PLACING ORDER</a></li>
                 <li><a href="">SHIPPING</a></li>
@@ -103,8 +113,8 @@
             </ul>
         </div>
         <div>
-            <ul>
-                <li><a href=""><strong>OUR COMPANY</strong></a></li>
+            <ul class="footerListingContainer">
+                <strong>OUR COMPANY</strong></a></li>
                 <li><a href="">CAREERS</a></li>
                 <li><a href="">LETTER FROM CEO</a></li>
                 <li><a href="">LEADERSHIP TEAM</a></li>
@@ -112,15 +122,16 @@
             </ul>
         </div>
         <div>
-            <ul>
-                <li><a href=""><strong>LEGAL</strong></a></li>
+            <ul class="footerListingContainer">
+                <strong>LEGAL</strong>
                 <li><a href="">PRIVACY</a></li>
                 <li><a href="">TERMS OF USE</a></li>
                 <li><a href="">SAFTEY RECALLS</a></li>
                 <li><a href="">MISSING PARTS</a></li>
             </ul>
         </div>
-        <div><img src="" alt="CHAMONIX"></div>
     </footer>
+    <div class="footerImageContainer"><img src="images/logo.png" alt="CHAMONIX" class="footerImage"></div>
+
 </body>
 </html>
