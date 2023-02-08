@@ -6,27 +6,215 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Montserrat'; /* Only font we'll be using */
+    font-family: 'Montserrat'; 
+    
+    /* Only font we'll be using */
 }
 
+
+/* STYLES FOR NAVIGATION BAR */
 .navbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5em;
-    text-align: center;
-    height: 12vh;
-    width: 100%;
+    height: 10vh;
+    margin: 0;
     transition: 0.3s ease;
-
 }
 
 .navbar:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.navbarItem {
+    list-style-type: none;
+
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navbarLink:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+/* END NAVBAR STYLES */
+
+
+/* HOME VIEWPORT ONE*/
+
+.homeViewportOne {
+    background: url('images/LandingImage.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    color: white;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.titleContainer {
+    margin-top: 15vh;
+    width: 35%;
+    margin-left: 15vw;
+}
+
+.title {
+    font-weight: 100;
+    font-size: 3em;
+}
+
+.subtitle {
+    font-weight: 100;
+}
+
+/*END VIEWPORT ONE */
+
+/* BEGIN VIEWPORT TWO */
+
+.homeViewportTwo {
+    background: url('images/SecondLandingImageTwo.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    color: white;
+
+}
+
+.homeViewportTwoTitle {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+.homeCardContainer {
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: 25% 25% 25%;
+    column-gap: 15px;
+    row-gap: 15px;
+
+}
+
+.homeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.homeImageCard {
+    max-width: 70%;
+    border-radius: 5px;
+
     
 }
 
-/* Shop Page Styles*/
+/* this media query accounts for abnormally oversized images*/
+@media only screen and (min-width: 1440px) {
+    .homeImageCard {
+        max-width: 50%;
+    }
+  }
+
+.homeCardLabel {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.imageLink {
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.imageLink:hover {
+    opacity: 0.8;
+}
+
+/* END VIEWPORT TWO*/
+
+/* BEGIN VIEWPORT THREE */
+
+.homeViewportThree {
+    background: url('images/ViewportThree.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.homeViewportThreeTitle {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+.thirdViewportContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.25em;
+}
+
+.thirdViewCards {
+    width: 50%;
+}
+
+.small {
+    max-width: 60%;
+}
+
+.learnMoreButton {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.learnMoreButton p {
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* END VIEWPORT THREE */
+/* END LANDING PAGE STYLES */
+
+/* **************************** */
+/* **************************** */
+/* **************************** */
+
+/* SHOP PAGE STYLES */
 
 .img{
     background: url(images/ShopHero.jpeg)no-repeat;
@@ -46,7 +234,7 @@ body {
   .center{
     position: absolute;
     top: 52%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 100%;
     padding: 0 20px;
@@ -55,12 +243,12 @@ body {
   .center .title{
     color: #fff;
     font-size: 55px;
-    font-weight: 600;
+    font-weight: 100;
   }
   .center .sub_title{
     color: #fff;
     font-size: 52px;
-    font-weight: 600;
+    font-weight: 100;
     display: flex;
     align-self: end;
   }
@@ -70,7 +258,6 @@ body {
     justify-content: center;
 }
 
-/* shop cards */
 .shopCardsContainer {   
     display: flex;
     justify-content: space-evenly;
@@ -78,30 +265,99 @@ body {
     flex-direction: column;
     display: grid;
     grid-template-columns: 50% 50%;
-
-    
-
-
-
 }
 
 
 .shopImages {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
 }
 
 .shopCards {
     border-radius: 5px;
 }
 
+.shopNavItem {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.shopNavLink {
+    text-decoration: none;
+    color: black;
+}
+
+.shopNavLink:hover {
+    text-decoration: underline;
+}
+
+/* SHOP PAGE END */
 
 
 
 
 
 
-/* STYLES FOR THE NAVBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END VIEWPORT THREE*/
+
+/* FOOTER STYLES */
+
+footer {
+    height: 25vh;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.footerListingContainer li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.footerListingContainer li a{
+    color: black;
+    text-decoration: none;
+}
+
+.footerListingContainer li a:hover{
+    text-decoration: underline;
+}
+
+.footerImageContainer {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.footerImage{
+    width: 100%; 
+}
+
+
+
+/* END FOOTER SYLES */
