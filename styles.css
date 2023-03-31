@@ -1,18 +1,14 @@
-/* Bejamin Filipenko and Chris de Leon*/
-
-/* GLOBAL STYLES */
+/* Chris de Leon & Benjamin Filipenko */
 
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: 'Montserrat'; 
-    
-    /* Only font we'll be using */
+    font-family: 'Montserrat';
 }
 
+/* navbar styles */
 
-/* STYLES FOR NAVIGATION BAR */
 .navbar {
     display: flex;
     height: 10vh;
@@ -51,13 +47,12 @@ body {
 
 }
 
-/* END NAVBAR STYLES */
+/* end navbar styles*/
 
+/* start landing page styles */
 
-/* HOME VIEWPORT ONE*/
-
-.homeViewportOne {
-    background: url('images/LandingImage.jpg') center center no-repeat;
+.viewportOne {
+    background: url('images/landingPageDog.jpeg') center center no-repeat;
     background-size: cover;
     height: 100vh;
     padding: 0;
@@ -66,9 +61,9 @@ body {
 }
 
 .titleContainer {
-    margin-top: 15vh;
+    margin-top: 25vh;
     width: 35%;
-    margin-left: 15vw;
+    margin-left: 8vw;
 }
 
 .title {
@@ -80,14 +75,34 @@ body {
     font-weight: 100;
 }
 
-/*END VIEWPORT ONE */
+.adoptButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.adoptButton {
+    padding: 14px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.adoptButton:hover {
+    background-color: white;
+    color: black;
+}
 
 /* BEGIN VIEWPORT TWO */
 
 .homeViewportTwo {
-    background: url('images/SecondLandingImageTwo.jpg') center center no-repeat;
+    background: url('images/home.jpg') center center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 900px;
     margin: 0;
     padding: 0;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
@@ -124,8 +139,12 @@ body {
 }
 
 .homeImageCard {
-    max-width: 70%;
+    
+    width: 200px;
+    height: 250px;
     border-radius: 5px;
+    
+    
 
     
 }
@@ -159,7 +178,7 @@ body {
 .homeViewportThree {
     background: url('images/ViewportThree.jpg') center center no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 700px;
     margin: 0;
     padding: 0;
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.7);
@@ -191,6 +210,7 @@ body {
 
 .small {
     max-width: 60%;
+    border-radius: 10px;
 }
 
 .learnMoreButton {
@@ -208,166 +228,8 @@ body {
 }
 
 /* END VIEWPORT THREE */
-/* END LANDING PAGE STYLES */
 
-/* **************************** */
-/* **************************** */
-/* **************************** */
-
-/* SHOP PAGE STYLES */
-
-.img{
-    background: url(images/ShopHero.jpeg)no-repeat;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .img::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .center{
-    position: absolute;
-    top: 52%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 20px;
-    
-  }
-  .center .title{
-    color: #fff;
-    font-size: 55px;
-    font-weight: 100;
-  }
-  .center .sub_title{
-    color: #fff;
-    font-size: 52px;
-    font-weight: 100;
-    display: flex;
-    align-self: end;
-  }
-
-.shopTitle {
-    display: flex;
-    justify-content: center;
-}
-
-.shopCardsContainer {   
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-
-.shopImages {
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-}
-
-.shopCards {
-    border-radius: 5px;
-}
-
-.shopNavItem {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.shopNavLink {
-    text-decoration: none;
-    color: black;
-}
-
-.shopNavLink:hover {
-    text-decoration: underline;
-}
-
-/* SHOP PAGE END */
-
-/* ************************* */
-/* ************************* */
-/* ************************* */
-
-
-
-/* ABOUT PAGE */
-
-.aboutContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15vw;
-    margin-top: 15vh;
-}
-
-
-.aboutTitleContainer {
-    margin-top: 15vh;
-    width: 30%;
-}
-
-
-.aboutViewportOne {
-    background: url('images/AboutHero.jpeg') center center no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 0;
-    color: white;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-}
-
-.aboutText {
-    width: 30%;
-    line-height: 5vh;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.3);
-    height: fit-content;
-    padding: 15px;
-    border-radius: 5px;
-
-}
-
-.finalContainer {
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    line-height: 8vh;
-}
-
-.shopButton {
-    text-decoration: none;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.shopButton p {
-    background-color: black;
-    width: 5%;
-    padding: 15px;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-/* END VIEWPORT THREE*/
-
-/* FOOTER STYLES */
+/* footer CSS*/
 
 footer {
     height: 25vh;
@@ -379,30 +241,16 @@ footer {
     width: 100%;
 }
 
-.footerListingContainer li{
+.footerContainer li{
     list-style-type: none;
     margin-top: 15px;
 }
 
-.footerListingContainer li a{
+.footerContainer li a{
     color: black;
     text-decoration: none;
 }
 
-.footerListingContainer li a:hover{
+.footerContainer li a:hover{
     text-decoration: underline;
 }
-
-.footerImageContainer {
-    width: 60%;
-    margin: 0 auto;
-
-}
-
-.footerImage{
-    width: 100%; 
-}
-
-
-
-/* END FOOTER SYLES */
